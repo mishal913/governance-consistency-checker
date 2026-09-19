@@ -1,0 +1,1000 @@
+[
+  {
+    "clause_a": "REG001",
+    "clause_b": "REG002",
+    "relationship": "Neutral",
+    "similarity": 0.156,
+    "confidence": 0.844,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG001 (Student Academic Regulations, level 3) was compared with REG002 (Student Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG001",
+    "clause_b": "REG006",
+    "relationship": "Neutral",
+    "similarity": 0.2809,
+    "confidence": 0.7191,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG001 (Student Academic Regulations, level 3) was compared with REG006 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG001",
+    "clause_b": "REG010",
+    "relationship": "Neutral",
+    "similarity": 0.1544,
+    "confidence": 0.8456,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG001 (Student Academic Regulations, level 3) was compared with REG010 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG001",
+    "clause_b": "REG011",
+    "relationship": "Neutral",
+    "similarity": 0.1605,
+    "confidence": 0.8395,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG001 (Student Academic Regulations, level 3) was compared with REG011 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG001",
+    "clause_b": "POL006",
+    "relationship": "Contradiction",
+    "similarity": 0.3771,
+    "confidence": 0.8443,
+    "hierarchy_violation": true,
+    "engine": "symbolic",
+    "explanation": "REG001 (Student Academic Regulations, level 3) was compared with POL006 (Department Attendance Policy, level 4). The clauses discuss the same domain but set different numeric values: [75.0] and [60.0]. This is a hierarchy violation because lower-level POL006 conflicts with higher-level REG001."
+  },
+  {
+    "clause_a": "REG002",
+    "clause_b": "REG010",
+    "relationship": "Neutral",
+    "similarity": 0.1218,
+    "confidence": 0.8782,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG002 (Student Academic Regulations, level 3) was compared with REG010 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG002",
+    "clause_b": "REG011",
+    "relationship": "Neutral",
+    "similarity": 0.0635,
+    "confidence": 0.9365,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG002 (Student Academic Regulations, level 3) was compared with REG011 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG002",
+    "clause_b": "POL006",
+    "relationship": "Neutral",
+    "similarity": 0.1559,
+    "confidence": 0.8441,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG002 (Student Academic Regulations, level 3) was compared with POL006 (Department Attendance Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG003",
+    "clause_b": "REG004",
+    "relationship": "Neutral",
+    "similarity": 0.0511,
+    "confidence": 0.9489,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG003 (Admission Regulations, level 3) was compared with REG004 (Admission Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG003",
+    "clause_b": "REG005",
+    "relationship": "Neutral",
+    "similarity": 0.0808,
+    "confidence": 0.9192,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG003 (Admission Regulations, level 3) was compared with REG005 (Admission Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG003",
+    "clause_b": "REG018",
+    "relationship": "Neutral",
+    "similarity": 0.1269,
+    "confidence": 0.8731,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG003 (Admission Regulations, level 3) was compared with REG018 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG003",
+    "clause_b": "EXC001",
+    "relationship": "Neutral",
+    "similarity": 0.1095,
+    "confidence": 0.8905,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG003 (Admission Regulations, level 3) was compared with EXC001 (Admission Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG004",
+    "clause_b": "REG005",
+    "relationship": "Neutral",
+    "similarity": 0.1586,
+    "confidence": 0.8414,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG004 (Admission Regulations, level 3) was compared with REG005 (Admission Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG004",
+    "clause_b": "REG018",
+    "relationship": "Neutral",
+    "similarity": 0.0509,
+    "confidence": 0.9491,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG004 (Admission Regulations, level 3) was compared with REG018 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG004",
+    "clause_b": "EXC001",
+    "relationship": "Neutral",
+    "similarity": 0.0364,
+    "confidence": 0.9636,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG004 (Admission Regulations, level 3) was compared with EXC001 (Admission Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG005",
+    "clause_b": "REG018",
+    "relationship": "Neutral",
+    "similarity": 0.1156,
+    "confidence": 0.8844,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG005 (Admission Regulations, level 3) was compared with REG018 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG005",
+    "clause_b": "POL001",
+    "relationship": "Neutral",
+    "similarity": 0.4726,
+    "confidence": 0.5274,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG005 (Admission Regulations, level 3) was compared with POL001 (Scholarship Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG005",
+    "clause_b": "EXC001",
+    "relationship": "Exception",
+    "similarity": 0.2301,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG005 (Admission Regulations, level 3) was compared with EXC001 (Admission Regulations, level 3). An explicit exception_to link connects these clauses. The narrower rule qualifies the general rule instead of replacing it."
+  },
+  {
+    "clause_a": "REG006",
+    "clause_b": "REG007",
+    "relationship": "Neutral",
+    "similarity": 0.2499,
+    "confidence": 0.7501,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG006 (Academic Regulations, level 3) was compared with REG007 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG006",
+    "clause_b": "REG015",
+    "relationship": "Neutral",
+    "similarity": 0.0554,
+    "confidence": 0.9446,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG006 (Academic Regulations, level 3) was compared with REG015 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG006",
+    "clause_b": "REG016",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG006 (Academic Regulations, level 3) was compared with REG016 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG006",
+    "clause_b": "REG018",
+    "relationship": "Neutral",
+    "similarity": 0.2012,
+    "confidence": 0.7988,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG006 (Academic Regulations, level 3) was compared with REG018 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG006",
+    "clause_b": "REG019",
+    "relationship": "Neutral",
+    "similarity": 0.1005,
+    "confidence": 0.8995,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG006 (Academic Regulations, level 3) was compared with REG019 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG006",
+    "clause_b": "PROC004",
+    "relationship": "Neutral",
+    "similarity": 0.134,
+    "confidence": 0.866,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG006 (Academic Regulations, level 3) was compared with PROC004 (Academic Regulations, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG006",
+    "clause_b": "REG021",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG006 (Academic Regulations, level 3) was compared with REG021 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG006",
+    "clause_b": "POL007",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG006 (Academic Regulations, level 3) was compared with POL007 (Graduation Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG007",
+    "clause_b": "REG015",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG007 (Academic Regulations, level 3) was compared with REG015 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG007",
+    "clause_b": "REG016",
+    "relationship": "Neutral",
+    "similarity": 0.1253,
+    "confidence": 0.8747,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG007 (Academic Regulations, level 3) was compared with REG016 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG007",
+    "clause_b": "REG019",
+    "relationship": "Neutral",
+    "similarity": 0.022,
+    "confidence": 0.978,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG007 (Academic Regulations, level 3) was compared with REG019 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG007",
+    "clause_b": "PROC004",
+    "relationship": "Neutral",
+    "similarity": 0.1838,
+    "confidence": 0.8162,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG007 (Academic Regulations, level 3) was compared with PROC004 (Academic Regulations, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG007",
+    "clause_b": "REG021",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG007 (Academic Regulations, level 3) was compared with REG021 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG007",
+    "clause_b": "POL007",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG007 (Academic Regulations, level 3) was compared with POL007 (Graduation Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG007",
+    "clause_b": "POL009",
+    "relationship": "Neutral",
+    "similarity": 0.2046,
+    "confidence": 0.7954,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG007 (Academic Regulations, level 3) was compared with POL009 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG008",
+    "clause_b": "REG009",
+    "relationship": "Neutral",
+    "similarity": 0.1522,
+    "confidence": 0.8478,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG008 (Academic Regulations, level 3) was compared with REG009 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG008",
+    "clause_b": "POL003",
+    "relationship": "Neutral",
+    "similarity": 0.0942,
+    "confidence": 0.9058,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG008 (Academic Regulations, level 3) was compared with POL003 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG008",
+    "clause_b": "POL004",
+    "relationship": "Neutral",
+    "similarity": 0.1299,
+    "confidence": 0.8701,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG008 (Academic Regulations, level 3) was compared with POL004 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG008",
+    "clause_b": "PROC001",
+    "relationship": "Neutral",
+    "similarity": 0.1109,
+    "confidence": 0.8891,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG008 (Academic Regulations, level 3) was compared with PROC001 (Fee Refund Policy, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG008",
+    "clause_b": "EXC002",
+    "relationship": "Neutral",
+    "similarity": 0.2118,
+    "confidence": 0.7882,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG008 (Academic Regulations, level 3) was compared with EXC002 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG008",
+    "clause_b": "EXC004",
+    "relationship": "Neutral",
+    "similarity": 0.1081,
+    "confidence": 0.8919,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG008 (Academic Regulations, level 3) was compared with EXC004 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG008",
+    "clause_b": "POL008",
+    "relationship": "Neutral",
+    "similarity": 0.0702,
+    "confidence": 0.9298,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG008 (Academic Regulations, level 3) was compared with POL008 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG008",
+    "clause_b": "POL009",
+    "relationship": "Neutral",
+    "similarity": 0.1676,
+    "confidence": 0.8324,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG008 (Academic Regulations, level 3) was compared with POL009 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG009",
+    "clause_b": "REG011",
+    "relationship": "Neutral",
+    "similarity": 0.2912,
+    "confidence": 0.7088,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG009 (Academic Regulations, level 3) was compared with REG011 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG009",
+    "clause_b": "POL003",
+    "relationship": "Neutral",
+    "similarity": 0.0873,
+    "confidence": 0.9127,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG009 (Academic Regulations, level 3) was compared with POL003 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG009",
+    "clause_b": "POL004",
+    "relationship": "Neutral",
+    "similarity": 0.0995,
+    "confidence": 0.9005,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG009 (Academic Regulations, level 3) was compared with POL004 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG009",
+    "clause_b": "PROC001",
+    "relationship": "Neutral",
+    "similarity": 0.0806,
+    "confidence": 0.9194,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG009 (Academic Regulations, level 3) was compared with PROC001 (Fee Refund Policy, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG009",
+    "clause_b": "EXC002",
+    "relationship": "Neutral",
+    "similarity": 0.1684,
+    "confidence": 0.8316,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG009 (Academic Regulations, level 3) was compared with EXC002 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG009",
+    "clause_b": "EXC004",
+    "relationship": "Neutral",
+    "similarity": 0.1184,
+    "confidence": 0.8816,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG009 (Academic Regulations, level 3) was compared with EXC004 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG009",
+    "clause_b": "POL008",
+    "relationship": "Neutral",
+    "similarity": 0.1675,
+    "confidence": 0.8325,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG009 (Academic Regulations, level 3) was compared with POL008 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG009",
+    "clause_b": "POL009",
+    "relationship": "Neutral",
+    "similarity": 0.1136,
+    "confidence": 0.8864,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG009 (Academic Regulations, level 3) was compared with POL009 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG010",
+    "clause_b": "REG011",
+    "relationship": "Neutral",
+    "similarity": 0.0452,
+    "confidence": 0.9548,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG010 (Academic Regulations, level 3) was compared with REG011 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG010",
+    "clause_b": "PROC005",
+    "relationship": "Neutral",
+    "similarity": 0.3001,
+    "confidence": 0.6999,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG010 (Academic Regulations, level 3) was compared with PROC005 (Academic Regulations, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG010",
+    "clause_b": "POL006",
+    "relationship": "Neutral",
+    "similarity": 0.0856,
+    "confidence": 0.9144,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG010 (Academic Regulations, level 3) was compared with POL006 (Department Attendance Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG011",
+    "clause_b": "REG013",
+    "relationship": "Neutral",
+    "similarity": 0.2329,
+    "confidence": 0.7671,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG011 (Academic Regulations, level 3) was compared with REG013 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG011",
+    "clause_b": "REG014",
+    "relationship": "Neutral",
+    "similarity": 0.3064,
+    "confidence": 0.6936,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG011 (Academic Regulations, level 3) was compared with REG014 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG011",
+    "clause_b": "EXC003",
+    "relationship": "Neutral",
+    "similarity": 0.277,
+    "confidence": 0.723,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG011 (Academic Regulations, level 3) was compared with EXC003 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG011",
+    "clause_b": "POL006",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG011 (Academic Regulations, level 3) was compared with POL006 (Department Attendance Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG012",
+    "clause_b": "REG013",
+    "relationship": "Neutral",
+    "similarity": 0.1558,
+    "confidence": 0.8442,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG012 (Academic Regulations, level 3) was compared with REG013 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG012",
+    "clause_b": "REG014",
+    "relationship": "Neutral",
+    "similarity": 0.2287,
+    "confidence": 0.7713,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG012 (Academic Regulations, level 3) was compared with REG014 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG012",
+    "clause_b": "REG020",
+    "relationship": "Neutral",
+    "similarity": 0.0888,
+    "confidence": 0.9112,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG012 (Academic Regulations, level 3) was compared with REG020 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG012",
+    "clause_b": "EXC003",
+    "relationship": "Neutral",
+    "similarity": 0.1039,
+    "confidence": 0.8961,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG012 (Academic Regulations, level 3) was compared with EXC003 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG013",
+    "clause_b": "REG014",
+    "relationship": "Neutral",
+    "similarity": 0.1671,
+    "confidence": 0.8329,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG013 (Academic Regulations, level 3) was compared with REG014 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG013",
+    "clause_b": "REG019",
+    "relationship": "Neutral",
+    "similarity": 0.2258,
+    "confidence": 0.7742,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG013 (Academic Regulations, level 3) was compared with REG019 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG013",
+    "clause_b": "REG020",
+    "relationship": "Neutral",
+    "similarity": 0.0855,
+    "confidence": 0.9145,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG013 (Academic Regulations, level 3) was compared with REG020 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG013",
+    "clause_b": "EXC001",
+    "relationship": "Neutral",
+    "similarity": 0.204,
+    "confidence": 0.796,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG013 (Academic Regulations, level 3) was compared with EXC001 (Admission Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG013",
+    "clause_b": "EXC002",
+    "relationship": "Neutral",
+    "similarity": 0.2515,
+    "confidence": 0.7485,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG013 (Academic Regulations, level 3) was compared with EXC002 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG013",
+    "clause_b": "EXC003",
+    "relationship": "Exception",
+    "similarity": 0.211,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG013 (Academic Regulations, level 3) was compared with EXC003 (University Regulations, level 3). An explicit exception_to link connects these clauses. The narrower rule qualifies the general rule instead of replacing it."
+  },
+  {
+    "clause_a": "REG014",
+    "clause_b": "REG020",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG014 (University Regulations, level 3) was compared with REG020 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG014",
+    "clause_b": "EXC003",
+    "relationship": "Neutral",
+    "similarity": 0.1362,
+    "confidence": 0.8638,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG014 (University Regulations, level 3) was compared with EXC003 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG015",
+    "clause_b": "REG016",
+    "relationship": "Neutral",
+    "similarity": 0.0504,
+    "confidence": 0.9496,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG015 (University Regulations, level 3) was compared with REG016 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG015",
+    "clause_b": "REG019",
+    "relationship": "Neutral",
+    "similarity": 0.2386,
+    "confidence": 0.7614,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG015 (University Regulations, level 3) was compared with REG019 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG015",
+    "clause_b": "PROC004",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG015 (University Regulations, level 3) was compared with PROC004 (Academic Regulations, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG015",
+    "clause_b": "REG021",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG015 (University Regulations, level 3) was compared with REG021 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG015",
+    "clause_b": "POL007",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG015 (University Regulations, level 3) was compared with POL007 (Graduation Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG016",
+    "clause_b": "REG019",
+    "relationship": "Neutral",
+    "similarity": 0.1609,
+    "confidence": 0.8391,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG016 (University Regulations, level 3) was compared with REG019 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG016",
+    "clause_b": "PROC004",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG016 (University Regulations, level 3) was compared with PROC004 (Academic Regulations, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG016",
+    "clause_b": "REG021",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG016 (University Regulations, level 3) was compared with REG021 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG016",
+    "clause_b": "POL007",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG016 (University Regulations, level 3) was compared with POL007 (Graduation Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG017",
+    "clause_b": "POL003",
+    "relationship": "Neutral",
+    "similarity": 0.2151,
+    "confidence": 0.7849,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG017 (University Regulations, level 3) was compared with POL003 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG017",
+    "clause_b": "PROC005",
+    "relationship": "Neutral",
+    "similarity": 0.2142,
+    "confidence": 0.7858,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG017 (University Regulations, level 3) was compared with PROC005 (Academic Regulations, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG018",
+    "clause_b": "PROC002",
+    "relationship": "Neutral",
+    "similarity": 0.2219,
+    "confidence": 0.7781,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG018 (University Regulations, level 3) was compared with PROC002 (Degree Issuance Procedure, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG018",
+    "clause_b": "EXC001",
+    "relationship": "Neutral",
+    "similarity": 0.0982,
+    "confidence": 0.9018,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG018 (University Regulations, level 3) was compared with EXC001 (Admission Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG019",
+    "clause_b": "PROC004",
+    "relationship": "Neutral",
+    "similarity": 0.0217,
+    "confidence": 0.9783,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG019 (University Regulations, level 3) was compared with PROC004 (Academic Regulations, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG019",
+    "clause_b": "EXC003",
+    "relationship": "Neutral",
+    "similarity": 0.3086,
+    "confidence": 0.6914,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG019 (University Regulations, level 3) was compared with EXC003 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG019",
+    "clause_b": "REG021",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG019 (University Regulations, level 3) was compared with REG021 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG019",
+    "clause_b": "POL007",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG019 (University Regulations, level 3) was compared with POL007 (Graduation Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG020",
+    "clause_b": "PROC002",
+    "relationship": "Neutral",
+    "similarity": 0.4378,
+    "confidence": 0.5622,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG020 (University Regulations, level 3) was compared with PROC002 (Degree Issuance Procedure, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG020",
+    "clause_b": "EXC003",
+    "relationship": "Neutral",
+    "similarity": 0.1285,
+    "confidence": 0.8715,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG020 (University Regulations, level 3) was compared with EXC003 (University Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "REG020",
+    "clause_b": "POL006",
+    "relationship": "Neutral",
+    "similarity": 0.2414,
+    "confidence": 0.7586,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "REG020 (University Regulations, level 3) was compared with POL006 (Department Attendance Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "POL001",
+    "clause_b": "POL002",
+    "relationship": "Neutral",
+    "similarity": 0.0489,
+    "confidence": 0.9511,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL001 (Scholarship Policy, level 4) was compared with POL002 (Scholarship Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "POL001",
+    "clause_b": "EXC005",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL001 (Scholarship Policy, level 4) was compared with EXC005 (Scholarship Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "POL002",
+    "clause_b": "EXC005",
+    "relationship": "Exception",
+    "similarity": 0.1886,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL002 (Scholarship Policy, level 4) was compared with EXC005 (Scholarship Policy, level 4). An explicit exception_to link connects these clauses. The narrower rule qualifies the general rule instead of replacing it."
+  },
+  {
+    "clause_a": "POL003",
+    "clause_b": "POL004",
+    "relationship": "Neutral",
+    "similarity": 0.0958,
+    "confidence": 0.9042,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL003 (Fee Refund Policy, level 4) was compared with POL004 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "POL003",
+    "clause_b": "PROC001",
+    "relationship": "Neutral",
+    "similarity": 0.1015,
+    "confidence": 0.8985,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL003 (Fee Refund Policy, level 4) was compared with PROC001 (Fee Refund Policy, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "POL003",
+    "clause_b": "EXC002",
+    "relationship": "Neutral",
+    "similarity": 0.0753,
+    "confidence": 0.9247,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL003 (Fee Refund Policy, level 4) was compared with EXC002 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "POL003",
+    "clause_b": "EXC004",
+    "relationship": "Exception",
+    "similarity": 0.2052,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL003 (Fee Refund Policy, level 4) was compared with EXC004 (Fee Refund Policy, level 4). An explicit exception_to link connects these clauses. The narrower rule qualifies the general rule instead of replacing it."
+  },
+  {
+    "clause_a": "POL003",
+    "clause_b": "POL008",
+    "relationship": "Redundancy",
+    "similarity": 0.1223,
+    "confidence": 0.9,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL003 (Fee Refund Policy, level 4) was compared with POL008 (Fee Refund Policy, level 4). The clauses use the same formal predicate rule."
+  },
+  {
+    "clause_a": "POL003",
+    "clause_b": "POL009",
+    "relationship": "Neutral",
+    "similarity": 0.0,
+    "confidence": 1.0,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL003 (Fee Refund Policy, level 4) was compared with POL009 (Fee Refund Policy, level 4). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "POL004",
+    "clause_b": "PROC001",
+    "relationship": "Neutral",
+    "similarity": 0.3667,
+    "confidence": 0.6333,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL004 (Fee Refund Policy, level 4) was compared with PROC001 (Fee Refund Policy, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "POL004",
+    "clause_b": "PROC003",
+    "relationship": "Neutral",
+    "similarity": 0.2543,
+    "confidence": 0.7457,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL004 (Fee Refund Policy, level 4) was compared with PROC003 (Appeal Procedure, level 5). No direct logical conflict, implication, or exception was established."
+  },
+  {
+    "clause_a": "POL004",
+    "clause_b": "EXC002",
+    "relationship": "Neutral",
+    "similarity": 0.2902,
+    "confidence": 0.7098,
+    "hierarchy_violation": false,
+    "engine": "symbolic",
+    "explanation": "POL004 (Fee Refund Policy, level 4) was compared with EXC002 (Academic Regulations, level 3). No direct logical conflict, implication, or exception was established."

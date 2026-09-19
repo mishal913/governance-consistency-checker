@@ -1,0 +1,449 @@
+@prefix cust: <http://cust.edu.pk/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cust:Charter a rdfs:Class .
+
+cust:Clause a rdfs:Class .
+
+cust:Constraint a rdfs:Class .
+
+cust:Document a rdfs:Class .
+
+cust:Exception a rdfs:Class .
+
+cust:GovernanceTier a rdfs:Class .
+
+cust:Policy a rdfs:Class .
+
+cust:Procedure a rdfs:Class .
+
+cust:Regulation a rdfs:Class .
+
+cust:Requirement a rdfs:Class .
+
+cust:Statute a rdfs:Class .
+
+cust:EXC001 a cust:Clause,
+        cust:Exception ;
+    cust:belongsTo cust:AdmissionRegulations ;
+    cust:clauseText "Applicants having an HEC-approved test may be exempted from the university admission test." ;
+    cust:exceptionRationale "HEC-approved tests create an exception to the normal university admission-test basis." ;
+    cust:exceptionTo cust:REG005 ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "HasHECTest(x) -> ExemptAdmissionTest(x)" ;
+    cust:subjectDomain "Admission" .
+
+cust:EXC002 a cust:Clause,
+        cust:Exception ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "A first-semester student withdrawing within the prescribed period shall receive tuition fee refund according to the approved schedule." ;
+    cust:exceptionRationale "First-semester withdrawal within the prescribed period qualifies the general tuition non-refund rule." ;
+    cust:exceptionTo cust:POL009 ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "FirstSemesterWithdrawal(x) -> TuitionRefund(x)" ;
+    cust:subjectDomain "Finance" .
+
+cust:EXC003 a cust:Clause,
+        cust:Exception ;
+    cust:belongsTo cust:UniversityRegulations ;
+    cust:clauseText "A student missing the final examination on medical grounds may apply for course withdrawal before declaration of results." ;
+    cust:exceptionRationale "Medical absence permits a withdrawal outside the ordinary course-withdrawal rule." ;
+    cust:exceptionTo cust:REG013 ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "MedicalGrounds(x) -> CourseWithdrawalAllowed(x)" ;
+    cust:subjectDomain "Examination" .
+
+cust:EXC004 a cust:Clause,
+        cust:Exception ;
+    cust:belongsTo cust:FeeRefundPolicy ;
+    cust:clauseText "If a university program is not offered after advertisement, tuition and admission fees shall be refunded." ;
+    cust:exceptionRationale "Program cancellation permits refund of the normally non-refundable admission fee." ;
+    cust:exceptionTo cust:POL003 ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "ProgramCancelled(p) -> FeeRefund(x)" ;
+    cust:subjectDomain "Finance" .
+
+cust:EXC005 a cust:Clause,
+        cust:Exception ;
+    cust:belongsTo cust:ScholarshipPolicy ;
+    cust:clauseText "Specially-abled students may receive scholarship relaxation under the approved scholarship policy." ;
+    cust:exceptionRationale "Disability-based relaxation qualifies the ordinary scholarship continuation conditions." ;
+    cust:exceptionTo cust:POL002 ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "SpeciallyAbled(x) -> ScholarshipRelaxation(x)" ;
+    cust:subjectDomain "Scholarship" .
+
+cust:GovernanceLevel1 a cust:GovernanceTier ;
+    rdfs:label "Governance level 1" ;
+    cust:governs cust:GovernanceLevel2 .
+
+cust:POL001 a cust:Clause,
+        cust:Policy,
+        cust:Requirement ;
+    cust:belongsTo cust:ScholarshipPolicy ;
+    cust:clauseText "Merit scholarships shall be awarded based on prescribed CGPA criteria." ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "CGPA(x,g) AND g>=3.90 -> MeritScholarship(x)" ;
+    cust:subjectDomain "Scholarship" .
+
+cust:POL004 a cust:Clause,
+        cust:Policy,
+        cust:Requirement ;
+    cust:belongsTo cust:FeeRefundPolicy ;
+    cust:clauseText "Fee refund requests shall be submitted on the prescribed refund form." ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "RefundFormSubmitted(x) -> RefundRequestAccepted(x)" ;
+    cust:subjectDomain "Finance" .
+
+cust:POL005 a cust:Clause,
+        cust:Policy,
+        cust:Requirement ;
+    cust:belongsTo cust:InternshipPolicy ;
+    cust:clauseText "Every student shall complete the prescribed internship requirement before graduation." ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "InternshipCompleted(x) -> EligibleForGraduation(x)" ;
+    cust:subjectDomain "Internship" .
+
+cust:POL006 a cust:Clause,
+        cust:Policy ;
+    cust:belongsTo cust:DepartmentAttendancePolicy ;
+    cust:clauseText "Students with at least 60% attendance may appear in final examinations." ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "AttendanceAtLeast60(x) -> EligibleForFinalExam(x)" ;
+    cust:subjectDomain "Attendance" .
+
+cust:POL007 a cust:Clause,
+        cust:Policy,
+        cust:Requirement ;
+    cust:belongsTo cust:GraduationPolicy ;
+    cust:clauseText "Graduating students must complete all required credit hours." ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "RequiredCreditHoursCompleted(x) -> EligibleForGraduation(x)" ;
+    cust:subjectDomain "Academics" .
+
+cust:POL008 a cust:Clause,
+        cust:Constraint,
+        cust:Policy ;
+    cust:belongsTo cust:FeeRefundPolicy ;
+    cust:clauseText "Admission fees shall not be refunded." ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "AdmissionFeePaid(x) -> NOT RefundAllowed(x)" ;
+    cust:subjectDomain "Finance" .
+
+cust:PROC001 a cust:Clause,
+        cust:Procedure,
+        cust:Requirement ;
+    cust:belongsTo cust:FeeRefundPolicy ;
+    cust:clauseText "Students shall submit applications for fee refund through the prescribed procedure." ;
+    cust:governanceLevel 5 ;
+    cust:predicateLogic "RefundApplicationSubmitted(x) -> RefundProcessStarted(x)" ;
+    cust:subjectDomain "Finance" .
+
+cust:PROC002 a cust:Clause,
+        cust:Procedure,
+        cust:Requirement ;
+    cust:belongsTo cust:DegreeIssuanceProcedure ;
+    cust:clauseText "Degree applications shall be submitted through the Controller of Examinations." ;
+    cust:governanceLevel 5 ;
+    cust:predicateLogic "DegreeApplicationSubmitted(x) -> DegreeIssued(x)" ;
+    cust:subjectDomain "Degree" .
+
+cust:PROC003 a cust:Clause,
+        cust:Procedure,
+        cust:Requirement ;
+    cust:belongsTo cust:AppealProcedure ;
+    cust:clauseText "Appeals shall be filed using the prescribed appeal form." ;
+    cust:governanceLevel 5 ;
+    cust:predicateLogic "AppealFormSubmitted(x) -> AppealProcessed(x)" ;
+    cust:subjectDomain "Appeal" .
+
+cust:PROC004 a cust:Clause,
+        cust:Procedure,
+        cust:Requirement ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "Credit transfer applications shall include the original transcript." ;
+    cust:governanceLevel 5 ;
+    cust:predicateLogic "TranscriptSubmitted(x) -> CreditTransferProcessed(x)" ;
+    cust:subjectDomain "Academics" .
+
+cust:PROC005 a cust:Clause,
+        cust:Procedure,
+        cust:Requirement ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "Registration shall be confirmed after payment of prescribed dues." ;
+    cust:governanceLevel 5 ;
+    cust:predicateLogic "FeePaid(x) -> RegistrationCompleted(x)" ;
+    cust:subjectDomain "Registration" .
+
+cust:REG001 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:StudentAcademicRegulations ;
+    cust:clauseText "A student shall be eligible to appear in the final examination only if he or she has secured at least 75% attendance." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "Student(x) AND EligibleForFinalExam(x) -> MinAttendanceMet(x)" ;
+    cust:subjectDomain "Attendance" .
+
+cust:REG002 a cust:Clause,
+        cust:Constraint,
+        cust:Regulation ;
+    cust:belongsTo cust:StudentAcademicRegulations ;
+    cust:clauseText "No relaxation in the attendance requirement shall be granted under any circumstances." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "AttendanceRelaxation(x) -> FALSE" ;
+    cust:subjectDomain "Attendance" .
+
+cust:REG003 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:AdmissionRegulations ;
+    cust:clauseText "An applicant shall have completed at least 12 years of education for undergraduate admission." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "Applicant(x) AND YearsOfEducation(x,n) AND n>=12 -> EligibleForAdmission(x)" ;
+    cust:subjectDomain "Admission" .
+
+cust:REG004 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:AdmissionRegulations ;
+    cust:clauseText "Admission shall remain provisional until duly attested academic documents are submitted." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "Applicant(x) AND NOT AttestedDocumentsSubmitted(x) -> NOT AdmissionConfirmed(x)" ;
+    cust:subjectDomain "Admission" .
+
+cust:REG006 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "Transfer of credits shall be permissible only if the candidate secured grade C+ or above." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "Student(x) AND CreditTransferAllowed(x) -> GradeAtLeastCPlus(x)" ;
+    cust:subjectDomain "Academics" .
+
+cust:REG007 a cust:Clause,
+        cust:Constraint,
+        cust:Regulation ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "Transfer credits shall not exceed the prescribed university limits." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "TransferCredits(x,n) AND n<=m -> TransferApproved(x)" ;
+    cust:subjectDomain "Academics" .
+
+cust:REG008 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "Tuition fee shall be paid before the due date to confirm registration." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "Student(x) AND FeePaid(x) -> RegistrationConfirmed(x)" ;
+    cust:subjectDomain "Finance" .
+
+cust:REG009 a cust:Clause,
+        cust:Constraint,
+        cust:Regulation ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "A student who defaults in fee payment shall not be permitted to attend classes." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "Student(x) AND FeeDefault(x) -> NOT AttendClasses(x)" ;
+    cust:subjectDomain "Finance" .
+
+cust:REG010 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "Attendance shall be recorded only after outstanding dues are cleared." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "DuesCleared(x) -> AttendanceRecorded(x)" ;
+    cust:subjectDomain "Attendance" .
+
+cust:REG011 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "A student missing 25% of classes shall be required to repeat the course." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "AttendanceBelow75(x) -> RepeatCourse(x)" ;
+    cust:subjectDomain "Attendance" .
+
+cust:REG012 a cust:Clause,
+        cust:Constraint,
+        cust:Regulation ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "A withdrawn course shall receive a W grade and shall not count toward GPA." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "WithdrawnCourse(c) -> GradeW(c) AND NOT CountInGPA(c)" ;
+    cust:subjectDomain "Examination" .
+
+cust:REG014 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:UniversityRegulations ;
+    cust:clauseText "A student receiving grade F must repeat that course." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "GradeF(x,c) -> MustRepeatCourse(x,c)" ;
+    cust:subjectDomain "Examination" .
+
+cust:REG015 a cust:Clause,
+        cust:Constraint,
+        cust:Regulation ;
+    cust:belongsTo cust:UniversityRegulations ;
+    cust:clauseText "A maximum of six courses may be repeated for CGPA improvement." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "RepeatedCourses(x,n) AND n<=6 -> CGPAImprovementAllowed(x)" ;
+    cust:subjectDomain "Academics" .
+
+cust:REG016 a cust:Clause,
+        cust:Regulation ;
+    cust:belongsTo cust:UniversityRegulations ;
+    cust:clauseText "A semester break requires university approval." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "SemesterBreakApproved(x) -> CanTakeBreak(x)" ;
+    cust:subjectDomain "Academics" .
+
+cust:REG017 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:UniversityRegulations ;
+    cust:clauseText "Two consecutive semesters of non-registration shall lead to cancellation of admission." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "TwoConsecutiveNonRegistrations(x) -> AdmissionCancelled(x)" ;
+    cust:subjectDomain "Registration" .
+
+cust:REG018 a cust:Clause,
+        cust:Constraint,
+        cust:Regulation ;
+    cust:belongsTo cust:UniversityRegulations ;
+    cust:clauseText "Re-admission shall only be considered if the degree can be completed within the maximum duration." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "WithinMaximumDuration(x) -> ReadmissionAllowed(x)" ;
+    cust:subjectDomain "Admission" .
+
+cust:REG019 a cust:Clause,
+        cust:Regulation ;
+    cust:belongsTo cust:UniversityRegulations ;
+    cust:clauseText "A student may apply for change of program with approval of the Head of Department." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "HODApproval(x) -> ProgramChangeAllowed(x)" ;
+    cust:subjectDomain "Academics" .
+
+cust:REG020 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:UniversityRegulations ;
+    cust:clauseText "The Office of Controller of Examinations shall conduct midterm and final examinations." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "ControllerOffice(x) -> ConductExaminations(x)" ;
+    cust:subjectDomain "Examination" .
+
+cust:REG021 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "Students must earn at least 130 credit hours to graduate." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "CreditHours(x,n) AND n>=130 -> EligibleForGraduation(x)" ;
+    cust:subjectDomain "Academics" .
+
+cust:AppealProcedure a cust:Document ;
+    rdfs:label "Appeal Procedure" ;
+    cust:hasGovernanceTier cust:GovernanceLevel5 .
+
+cust:DegreeIssuanceProcedure a cust:Document ;
+    rdfs:label "Degree Issuance Procedure" ;
+    cust:hasGovernanceTier cust:GovernanceLevel5 .
+
+cust:DepartmentAttendancePolicy a cust:Document ;
+    rdfs:label "Department Attendance Policy" ;
+    cust:hasGovernanceTier cust:GovernanceLevel4 .
+
+cust:GovernanceLevel2 a cust:GovernanceTier ;
+    rdfs:label "Governance level 2" ;
+    cust:governs cust:GovernanceLevel3 .
+
+cust:GraduationPolicy a cust:Document ;
+    rdfs:label "Graduation Policy" ;
+    cust:hasGovernanceTier cust:GovernanceLevel4 .
+
+cust:InternshipPolicy a cust:Document ;
+    rdfs:label "Internship Policy" ;
+    cust:hasGovernanceTier cust:GovernanceLevel4 .
+
+cust:POL002 a cust:Clause,
+        cust:Policy ;
+    cust:belongsTo cust:ScholarshipPolicy ;
+    cust:clauseText "Scholarship continuation depends upon fulfillment of prescribed academic conditions." ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "ScholarshipHolder(x) AND AcademicConditionsMet(x) -> ScholarshipContinues(x)" ;
+    cust:subjectDomain "Scholarship" .
+
+cust:POL003 a cust:Clause,
+        cust:Policy ;
+    cust:belongsTo cust:FeeRefundPolicy ;
+    cust:clauseText "Admission fee is non-refundable." ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "AdmissionFeePaid(x) -> NOT RefundAllowed(x)" ;
+    cust:subjectDomain "Finance" .
+
+cust:POL009 a cust:Clause,
+        cust:Constraint,
+        cust:Policy ;
+    cust:belongsTo cust:FeeRefundPolicy ;
+    cust:clauseText "Tuition fees shall not be refunded after the prescribed withdrawal period." ;
+    cust:governanceLevel 4 ;
+    cust:predicateLogic "AfterWithdrawalPeriod(x) -> NOT TuitionRefund(x)" ;
+    cust:subjectDomain "Finance" .
+
+cust:REG005 a cust:Clause,
+        cust:Regulation,
+        cust:Requirement ;
+    cust:belongsTo cust:AdmissionRegulations ;
+    cust:clauseText "Admission shall be awarded on merit based on admission test and previous academic performance." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "Applicant(x) AND MeritSatisfied(x) -> EligibleForAdmission(x)" ;
+    cust:subjectDomain "Admission" .
+
+cust:REG013 a cust:Clause,
+        cust:Regulation ;
+    cust:belongsTo cust:AcademicRegulations ;
+    cust:clauseText "A student may withdraw from a course within ten weeks from the start of the semester." ;
+    cust:governanceLevel 3 ;
+    cust:predicateLogic "WithinWithdrawalPeriod(x) -> CanWithdrawCourse(x)" ;
+    cust:subjectDomain "Examination" .
+
+cust:StudentAcademicRegulations a cust:Document ;
+    rdfs:label "Student Academic Regulations" ;
+    cust:hasGovernanceTier cust:GovernanceLevel3 .
+
+cust:ScholarshipPolicy a cust:Document ;
+    rdfs:label "Scholarship Policy" ;
+    cust:hasGovernanceTier cust:GovernanceLevel4 .
+
+cust:AdmissionRegulations a cust:Document ;
+    rdfs:label "Admission Regulations" ;
+    cust:hasGovernanceTier cust:GovernanceLevel3 .
+
+cust:GovernanceLevel3 a cust:GovernanceTier ;
+    rdfs:label "Governance level 3" ;
+    cust:governs cust:GovernanceLevel4 .
+
+cust:GovernanceLevel5 a cust:GovernanceTier ;
+    rdfs:label "Governance level 5" .
+
+cust:FeeRefundPolicy a cust:Document ;
+    rdfs:label "Fee Refund Policy" ;
+    cust:hasGovernanceTier cust:GovernanceLevel4,
+        cust:GovernanceLevel5 .
+
+cust:GovernanceLevel4 a cust:GovernanceTier ;
+    rdfs:label "Governance level 4" ;
+    cust:governs cust:GovernanceLevel5 .
+
+cust:UniversityRegulations a cust:Document ;
+    rdfs:label "University Regulations" ;
+    cust:hasGovernanceTier cust:GovernanceLevel3 .
+
+cust:AcademicRegulations a cust:Document ;
+    rdfs:label "Academic Regulations" ;
+    cust:hasGovernanceTier cust:GovernanceLevel3,
+        cust:GovernanceLevel5 .

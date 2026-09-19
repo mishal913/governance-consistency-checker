@@ -1,0 +1,8 @@
+{
+  "source": "governance_clauses.csv",
+  "summary": {
+    "error": 0,
+    "warning": 0
+  },
+  "findings": []
+}
