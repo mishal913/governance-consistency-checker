@@ -1,0 +1,5 @@
+exception_clause_id,target_clause_id,rationale
+EXC001,REG005,HEC-approved tests create an exception to the normal university admission-test basis.
+EXC003,REG013,Medical absence permits a withdrawal outside the ordinary course-withdrawal rule.
+EXC004,POL003,Program cancellation permits refund of the normally non-refundable admission fee.
+EXC005,POL002,Disability-based relaxation qualifies the ordinary scholarship continuation conditions.

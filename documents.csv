@@ -1,0 +1,13 @@
+document_id,document_name,governance_level,document_type,issuing_authority
+DOC001,CUST Act 2015,1,Charter,CUST
+DOC002,CUST Regulations 2026,2,Statute,CUST
+DOC003,Student Academic Regulations,3,Regulation,CUST
+DOC004,Student Discipline Regulations,3,Regulation,CUST
+DOC005,Scholarship Policy,4,Policy,CUST
+DOC006,Fee Refund Policy,4,Policy,CUST
+DOC007,Internship Policy,4,Policy,CUST
+DOC008,Appeal Procedure,5,Procedure,CUST
+DOC009,Degree Issuance Procedure,5,Procedure,CUST
+DOC010,Academic Regulations,3,Regulation,CUST
+DOC011,Admission Regulations,3,Regulation,CUST
+DOC012,University Regulations,3,Regulation,CUST
